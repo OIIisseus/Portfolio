@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #131516;
+        margin: 0;
+        font-family: sans-serif;
+
+    }
+
+    #welcome-section {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        height: 939px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: inherit;
+        flex-direction: column;
+        font-family: sans-serif;
+
+    }
+
+    #projects {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        height: 12in;
+        background-color: #864879;
+        font-family: sans-serif;
+    }
+
+    #welcome_text {
+        position: relative;
+        margin-top: auto;
+        bottom: 4in;
+        font-size: 50px;
+        color: #FF0000;
+
+    }
+
+    #Projects_text {
+        position: relative;
+        top: 20px;
+        color: #E9A6A6;
+        transition: 1s ease-out 60ms;
+    }
+
+    @media screen and (min-width: 999px) {
+        #Projects_text {
+            font-size: 40px;
+        }
+    }
+
+    #Project_image {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    #Project_links {
+        position: relative;
+        top: 2in;
+        display: block;
+        text-decoration: none;
+        font-family: sans-serif;
+        color: white;
+        background-color: #3F3351;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        box-shadow: 1px 1px 1px darkgray;
+        box-sizing: inherit;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3px;
+        transition: width 1s ease-out 20ms;
+
+    }
+
+    #Project_links:hover {
+        width: 35%;
+    }
+
+    #Project_description {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 30px;
+
+    }
+    #navbar {
+        display: block;
+        position: fixed;
+        background-color: #11052C;
+        width: 100%;
+        height: 0.8in;
+        z-index: 1;
+        box-shadow: 1px 1px black;
+        
+
+    }
+    #nav_link {
+        margin-top: 25px;
+        margin-right: 20px;
+        font-size: 20px;
+        float: right;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        
+    }
+
+    #Profile_links {
+        display: flex;
+        bottom: 20px;
+        position: relative;
+        box-sizing: inherit;
+        flex-direction: column;
+        text-align: center;
+        
+        width: 100%;
+        height: 100%;
+        padding-bottom: 2in;
+        background-color: #212121;
+        justify-content: center;
+    }
+
+    #Profile_text {
+        display: block;
+        position: relative;
+        font-size: 30px;
+    }
+
+    #Github-link:hover {
+        width: 20%;
+        
+    }
+    #Github-link {
+        
+        position: absolute;
+        bottom: 0.6in;
+        left: 40%;
+        width: 17%;
+        max-width: 2.6in;
+        transition: 1s ease-out 60ms;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    
+    <nav id="navbar">
+        <a id="nav_link" href="#projects" alt="Product landing page">Projects</a>
+    </nav>
+    <section id="welcome-section">
+        <h1 id="welcome_text">Hello World, <br>my name is Ulysses Cross</h1>
+    </section>
+    <section id="projects">
+        <h2 id="Projects_text">Projects I've done so far...</h2>
+        <a id="Project_links" href="#" class="project-tile">
+            <img id="Project_image" src="Images/Capture.PNG">
+            <p id="Project_description">Product landing page</p>
+        </a>
+    </section>
+    <section id="Profile_links">
+        <h3 id="Profile_text">I look foward to working with you</h3>
+        <a id="profile-link" href="https://github.com/OIIisseus" target="_blank"> 
+            <img id="Github-link" src="Images/My Post (6).png">
+    </a> 
+    </section>
+    
+</body>
+
+</html>
